@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendario de eventos</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+    }
+    col.hora {
+      background-color: #f2f2f2;
+    }
+    col.evento {
+      background-color: #eaf6ff;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <colgroup>
+      <col class="hora">
+      <col class="evento">
+      <col class="evento">
+    </colgroup>
+
+    <tr>
+      <th>Hora</th>
+      <th>Actividad</th>
+      <th>Ubicación</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">09:00</td>
+      <td>Registro</td>
+      <td>Entrada principal</td>
+    </tr>
+    <tr>
+      <td>Bienvenida</td>
+      <td>Auditorio</td>
+    </tr>
+
+    <tr>
+      <td>11:00</td>
+      <td>Conferencia</td>
+      <td>Sala 1</td>
+    </tr>
+  </table>
+</body>
+</html>

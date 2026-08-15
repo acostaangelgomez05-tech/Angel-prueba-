@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lienzo para gráficos dinámicos</title>
+</head>
+<body>
+  <canvas id="miLienzo" width="400" height="200">
+    tu navegador no soporta graficos dinamicos.
+  </canvas>
+
+  <script>
+    const canvas = document.getElementById("miLienzo");
+    const ctx = canvas.getContext("2d");
+//rectangulo relleno
+    ctx.fillStyle = "#1c87c9";
+    ctx.fillRect(20, 20, 120, 80);
+//circulo deliniado
+    ctx.beginPath();
+    ctx.arc(250, 60, 40, 0, 2 * Math.PI);
+    ctx.strokeStyle = "#333"; //renderiza el contorno del lienzo
+  </script>
+</body>
+</html>
